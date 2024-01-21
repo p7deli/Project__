@@ -4,7 +4,7 @@
 ## Admin.py:
 #### Program start section In this section, you enter the program by entering your username and password
 
-![Uploading Screenshot (373).png…]()
+![Screenshot (373)](https://github.com/p7deli/Project__/assets/124894066/3bd805ba-002c-4973-bd55-d937e9cff1df)
 
 
 ## Start.py:
