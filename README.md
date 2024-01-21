@@ -4,7 +4,8 @@
 ## Admin.py:
 #### Program start section In this section, you enter the program by entering your username and password
 
-![Screenshot (3181).png](..%2F..%2FPictures%2FScreenshots%2FScreenshot%20%283181%29.png)
+![Uploading Screenshot (373).png…]()
+
 
 ## Start.py:
 #### In this section, you can see the main menu of the program
