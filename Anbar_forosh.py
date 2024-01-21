@@ -2,8 +2,7 @@ import customtkinter as ctk
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
-import mysql.connector
-
+import sqlite3
 
 
 class AnbarForosh(ctk.CTk):
@@ -13,13 +12,9 @@ class AnbarForosh(ctk.CTk):
         self.geometry("%dx%d+%d+%d" % (965, 700, 200, 10))
         self.iconbitmap("icons\warehouse.ico")
         self.title("انبار فروش")
+        self.resizable(False, False)
         
-        self.db = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="1234",
-            database="froshgahkafsh"
-        )
+        self.db = sqlite3.connect("Shoe_stores.db")
         self.my_cursor = self.db.cursor()
         
         self.frame1 = ctk.CTkFrame(self, width=950, height=60, fg_color="#5d9476")
@@ -117,7 +112,7 @@ class AnbarForosh(ctk.CTk):
         
         self.lbl_jamkol = ctk.CTkLabel(self.frame4, text="جمع کل", font=("b nazanin", 20, "bold"), text_color="white")
         self.lbl_jamkol.place(x=750, y=5)
-    
+        
         self.table2 = ttk.Treeview(self.frame4, columns=("1"),
                                   show="headings", height=0)
         self.table2.place(x=10, y=10)
@@ -162,6 +157,7 @@ class AnbarForosh(ctk.CTk):
             window = ctk.CTk()
             window.geometry("%dx%d+%d+%d" % (400, 460, 500, 100))
             window.protocol("WM_DELETE_WINDOW", close)
+            window.resizable(False, False)
             
             frame1 = ctk.CTkFrame(window, width=350, height=50)
             frame1.pack(padx=5, pady=5)
@@ -272,3 +268,12 @@ class AnbarForosh(ctk.CTk):
             messagebox.showerror("Error", "موردی یافت نشد")
 
         self.table2.heading("# 1", text=f"{sum(List):,}", anchor="center")
+
+
+def main():
+    app = AnbarForosh()
+    app.mainloop()
+
+
+if __name__ == "__main__":
+    main()

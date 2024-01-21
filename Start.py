@@ -21,8 +21,8 @@ class Start(ctk.CTk):
                                    border_color="gray")
         self.frame1.pack(padx=5, pady=5)
         
-        self.img1 = Image.open("pictuer\pic.png")
-        self.img1 = self.img1.resize((500, 100), Image.ANTIALIAS)
+        self.img1 = Image.open("pictures\pic.png")
+        self.img1 = self.img1.resize((500, 100))
         self.photoImg1 = ImageTk.PhotoImage(self.img1)
         
         self.label1 = Label(self.frame1, image=self.photoImg1, width=500, height=100, bg="white")
@@ -36,8 +36,8 @@ class Start(ctk.CTk):
                                    height=400, border_width=5, border_color="gray")
         self.frame2.pack(padx=5, pady=5)
         
-        self.img2 = Image.open("pictuer\فروشگاه-کفش-و-کتونی-زیتون-1536x864.jpg")
-        self.img2 = self.img2.resize((700, 365), Image.ANTIALIAS)
+        self.img2 = Image.open("pictures\فروشگاه-کفش-و-کتونی-زیتون-1536x864.jpg")
+        self.img2 = self.img2.resize((700, 365))
         self.photoImg2 = ImageTk.PhotoImage(self.img2)
         
         self.label1 = Label(self.frame2, image=self.photoImg2, width=700, height=365, bg="white")

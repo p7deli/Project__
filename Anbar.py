@@ -2,7 +2,7 @@ import customtkinter as ctk
 from tkinter import ttk
 from tkinter import Scrollbar
 import tkinter.messagebox
-import mysql.connector
+import sqlite3
 
 
 
@@ -10,12 +10,7 @@ class Anbar(ctk.CTk):
     def __init__(self):
         super().__init__()
         
-        self.db = mysql.connector.connect(
-            host="localhost",
-            user="root",
-            password="1234",
-            database="froshgahkafsh"
-        )
+        self.db = sqlite3.connect("Shoe_stores.db")
         self.my_cursor = self.db.cursor()
         
         self.geometry("%dx%d+%d+%d" % (1000, 700, 150, 5))
@@ -269,8 +264,7 @@ class Anbar(ctk.CTk):
                 self.txtcode.delete(0, ctk.END)
                 self.txtcolor.delete(0, ctk.END)
                 self.txtgender.delete(0, ctk.END)
-        
-        
+
     def Cleartxt(self):
         for item in [self.txtbox_Id, self.txtbox_color, self.txtbox_size, self.txtbox_count, self.txtbox_price]:
             item.delete(0, ctk.END)
@@ -334,4 +328,12 @@ class Anbar(ctk.CTk):
                 self.txtbox_price.configure(placeholder_text="قیمت را وارد کنید")
             else:
                 tkinter.messagebox.showerror("Error", "لطفا یکی از موارد تیبل را سلکت کنید")
-        
+
+
+def main():
+    app = Anbar()
+    app.mainloop()
+
+
+if __name__ == "__main__":
+    main()
