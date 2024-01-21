@@ -25,10 +25,9 @@
 ## forosh.py:
 #### The main part of the program is this section. This section is for selling products
 
-![Screenshot (378)](https://github.com/p7deli/Project__/assets/124894066/1167830f-ee2a-487c-ab32-4b47d0f5ff90)
-
+![Screenshot (379)](https://github.com/p7deli/Project__/assets/124894066/0b2a0407-854e-4af6-85c8-9a49fae9ac1c)
 
 ## panel_admin.py:
 #### In this section you can change the username and password
 
-
+![Screenshot (378)](https://github.com/p7deli/Project__/assets/124894066/1167830f-ee2a-487c-ab32-4b47d0f5ff90)
