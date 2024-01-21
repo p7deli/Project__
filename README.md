@@ -10,24 +10,25 @@
 ## Start.py:
 #### In this section, you can see the main menu of the program
 
-![Screenshot (3182).png](..%2F..%2FPictures%2FScreenshots%2FScreenshot%20%283182%29.png)
+![Screenshot (375)](https://github.com/p7deli/Project__/assets/124894066/442a7275-a2ca-4895-a0b1-04bcf6145250)
 
 ## Anbar.py:
 #### In this section, you can check your inventory and add, delete, and edit items
 
-![Screenshot (3183).png](..%2F..%2FPictures%2FScreenshots%2FScreenshot%20%283183%29.png)
+![Screenshot (376)](https://github.com/p7deli/Project__/assets/124894066/45fa7f5d-d827-4791-8d6c-3ccf44af864a)
 
 ## Anbar_forosh.py:
 #### In this section, you can see the sold items in the entered dates
 
-![Screenshot (3184).png](..%2F..%2FPictures%2FScreenshots%2FScreenshot%20%283184%29.png)
+![Screenshot (377)](https://github.com/p7deli/Project__/assets/124894066/26c5a223-9f6b-46f2-b6c0-a19c10b06b88)
 
 ## forosh.py:
 #### The main part of the program is this section. This section is for selling products
 
-![Screenshot (3186).png](..%2F..%2FPictures%2FScreenshots%2FScreenshot%20%283186%29.png)
+![Screenshot (378)](https://github.com/p7deli/Project__/assets/124894066/1167830f-ee2a-487c-ab32-4b47d0f5ff90)
+
 
 ## panel_admin.py:
 #### In this section you can change the username and password
 
-![Screenshot (3185).png](..%2F..%2FPictures%2FScreenshots%2FScreenshot%20%283185%29.png)
+
